@@ -29,6 +29,7 @@ int main(){
 int main(){
     int con=1;
     while(con){
+        cout << endl;
         int n = 0;
         //User enter a positive integer n, n is the sequence's length
         while(n==0){
@@ -50,7 +51,7 @@ int main(){
             cin >> arr[i];
         }
 
-        //numbers in the array are printed from the largest index
+        //Numbers in the array are printed from the largest index
         cout << "The reversed sequence of integers: ";
         for(int j=n-1; j>-1; j--){
             cout << arr[j] << ' ';
