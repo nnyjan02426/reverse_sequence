@@ -35,7 +35,7 @@ int main(){
         while(n==0){
             cout << "Please enter a positive integer: ";
             cin >> n;
-            if((n!=0)&&(0<n)&&(n<1000)){
+            if((0<n)&&(n<1000)){
                 break;
             }
             else{
