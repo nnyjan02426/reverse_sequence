@@ -31,16 +31,16 @@ int main(){
     while(con){
         cout << endl;
         int n = 0;
+        bool n_pass = 0;
         //User enter a positive integer n, n is the sequence's length
-        while(n==0){
+        while(!n_pass){
             cout << "Please enter a positive integer: ";
             cin >> n;
             if((0<n)&&(n<1000)){
-                break;
+                n_pass = 1;
             }
             else{
                 cout << "The integer must be higher than 0, lower than 1000." << endl;
-                n = 0;
             }
         }
         int arr[n];
